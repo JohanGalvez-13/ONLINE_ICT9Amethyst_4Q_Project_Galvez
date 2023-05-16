@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Millimeter Converter</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #003049;"><br><br><br><br>
+	<h1 style="color: #FCBF49;"><center>Millimeters Converter</center></h1><br>
+	<center><img src="https://cdn-icons-png.flaticon.com/512/80/80666.png" height="250" width="250"></center><br>
+	<div style="background-color: #D62828;"><center><br>
+	<input type="number" id="length" placeholder="Enter units here"><br><br>
+	<input type="submit" value="MM to CM" onclick="cENTIMETERS()" class="btn btn-danger btn-md"></th>			
+	<input type="submit" value="MM to M" onclick="mETERS()" class="btn btn-warning btn-md"></th>
+	<input type="submit" value="MM to KM" onclick="kILOMETERS()" class="btn btn-success btn-md"></th><br><br>
+	<p id="convertion"></p>
+		<script>
+			function cENTIMETERS() {
+				var millimeters = document.getElementById('length').value;					
+				var converted = millimeters * 0.1;
+				window.alert("The answer is " + converted);
+			}
+			function mETERS() {
+				var millimeters = document.getElementById('length').value;	
+				var converted = millimeters * 0.001 ;
+				window.alert("The answer is " + converted);
+			}
+			function kILOMETERS() {
+				var millimeters = document.getElementById('length').value;	
+				var converted = millimeters * 1e-6;
+				window.alert("The answer is " + converted);
+			}
+		</script></center>
+	</div>
+</body>
+</html>
